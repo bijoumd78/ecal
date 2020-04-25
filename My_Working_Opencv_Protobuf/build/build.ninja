@@ -34,7 +34,7 @@ include rules.ninja
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/mahamadou/Desktop/Opencv_Protobuf/build && /usr/bin/cmake --regenerate-during-build -S/home/mahamadou/Desktop/Opencv_Protobuf -B/home/mahamadou/Desktop/Opencv_Protobuf/build
+  COMMAND = cd /home/mahamadou/Desktop/ecal/My_Working_Opencv_Protobuf/build && /usr/bin/cmake --regenerate-during-build -S/home/mahamadou/Desktop/ecal/My_Working_Opencv_Protobuf -B/home/mahamadou/Desktop/ecal/My_Working_Opencv_Protobuf/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -46,7 +46,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/mahamadou/Desktop/Opencv_Protobuf/build && /usr/bin/cmake-gui -S/home/mahamadou/Desktop/Opencv_Protobuf -B/home/mahamadou/Desktop/Opencv_Protobuf/build
+  COMMAND = cd /home/mahamadou/Desktop/ecal/My_Working_Opencv_Protobuf/build && /usr/bin/cmake-gui -S/home/mahamadou/Desktop/ecal/My_Working_Opencv_Protobuf -B/home/mahamadou/Desktop/ecal/My_Working_Opencv_Protobuf/build
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -146,7 +146,7 @@ build Serialization: CXX_EXECUTABLE_LINKER__Serialization_ CMakeFiles/Serializat
 # Custom command for image.pb.h
 
 build image.pb.h image.pb.cc: CUSTOM_COMMAND ../image.proto /usr/bin/protoc
-  COMMAND = cd /home/mahamadou/Desktop/Opencv_Protobuf/build && /usr/bin/protoc --cpp_out /home/mahamadou/Desktop/Opencv_Protobuf/build -I /home/mahamadou/Desktop/Opencv_Protobuf /home/mahamadou/Desktop/Opencv_Protobuf/image.proto
+  COMMAND = cd /home/mahamadou/Desktop/ecal/My_Working_Opencv_Protobuf/build && /usr/bin/protoc --cpp_out /home/mahamadou/Desktop/ecal/My_Working_Opencv_Protobuf/build -I /home/mahamadou/Desktop/ecal/My_Working_Opencv_Protobuf /home/mahamadou/Desktop/ecal/My_Working_Opencv_Protobuf/image.proto
   DESC = Running cpp protocol buffer compiler on image.proto
   restat = 1
 
@@ -159,7 +159,7 @@ build image.pb.h image.pb.cc: CUSTOM_COMMAND ../image.proto /usr/bin/protoc
 # =============================================================================
 
 #############################################
-# Folder: /home/mahamadou/Desktop/Opencv_Protobuf/build
+# Folder: /home/mahamadou/Desktop/ecal/My_Working_Opencv_Protobuf/build
 
 build all: phony Deserialization Serialization
 

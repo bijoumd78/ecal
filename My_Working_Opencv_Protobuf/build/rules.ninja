@@ -61,7 +61,7 @@ rule CXX_EXECUTABLE_LINKER__Serialization_
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /usr/bin/cmake --regenerate-during-build -S/home/mahamadou/Desktop/Opencv_Protobuf -B/home/mahamadou/Desktop/Opencv_Protobuf/build
+  command = /usr/bin/cmake --regenerate-during-build -S/home/mahamadou/Desktop/ecal/My_Working_Opencv_Protobuf -B/home/mahamadou/Desktop/ecal/My_Working_Opencv_Protobuf/build
   description = Re-running CMake...
   generator = 1
 

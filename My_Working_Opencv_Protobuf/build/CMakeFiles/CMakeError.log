@@ -1,11 +1,11 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
-Change Dir: /home/mahamadou/Desktop/Opencv_Protobuf/build/CMakeFiles/CMakeTmp
+Change Dir: /home/mahamadou/Desktop/ecal/My_Working_Opencv_Protobuf/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_bc519 && [1/2] Building C object CMakeFiles/cmTC_bc519.dir/src.c.o
-[2/2] Linking C executable cmTC_bc519
-FAILED: cmTC_bc519 
-: && /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   CMakeFiles/cmTC_bc519.dir/src.c.o  -o cmTC_bc519   && :
-CMakeFiles/cmTC_bc519.dir/src.c.o: In function `main':
+Run Build Command(s):/usr/bin/ninja cmTC_62ca4 && [1/2] Building C object CMakeFiles/cmTC_62ca4.dir/src.c.o
+[2/2] Linking C executable cmTC_62ca4
+FAILED: cmTC_62ca4 
+: && /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   CMakeFiles/cmTC_62ca4.dir/src.c.o  -o cmTC_62ca4   && :
+CMakeFiles/cmTC_62ca4.dir/src.c.o: In function `main':
 src.c:(.text+0x3e): undefined reference to `pthread_create'
 src.c:(.text+0x4a): undefined reference to `pthread_detach'
 src.c:(.text+0x56): undefined reference to `pthread_cancel'
@@ -37,12 +37,12 @@ int main(void)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/mahamadou/Desktop/Opencv_Protobuf/build/CMakeFiles/CMakeTmp
+Change Dir: /home/mahamadou/Desktop/ecal/My_Working_Opencv_Protobuf/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_f0312 && [1/2] Building C object CMakeFiles/cmTC_f0312.dir/CheckFunctionExists.c.o
-[2/2] Linking C executable cmTC_f0312
-FAILED: cmTC_f0312 
-: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=pthread_create   CMakeFiles/cmTC_f0312.dir/CheckFunctionExists.c.o  -o cmTC_f0312  -lpthreads && :
+Run Build Command(s):/usr/bin/ninja cmTC_f546c && [1/2] Building C object CMakeFiles/cmTC_f546c.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_f546c
+FAILED: cmTC_f546c 
+: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=pthread_create   CMakeFiles/cmTC_f546c.dir/CheckFunctionExists.c.o  -o cmTC_f546c  -lpthreads && :
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
 ninja: build stopped: subcommand failed.
