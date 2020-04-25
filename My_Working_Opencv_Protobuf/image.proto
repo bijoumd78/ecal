@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package opencv;
+
+message OcvMat {
+    int32  id  = 1;
+    int32 rows = 2;
+    int32 cols = 3;
+    int32 elt_type = 4;
+    int32 elt_size = 5;
+    bytes mat_data = 6;
+}
